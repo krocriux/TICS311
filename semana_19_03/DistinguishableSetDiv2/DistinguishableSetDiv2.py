@@ -16,7 +16,6 @@ Created on Mon Mar 19 15:10:13 2018
 
 def count(answer) :
     contador = 0
-    ind_status = index_status(answer)
     sets = operador(len(answer[0]))
     for sett in sets:
         if verificacion(answer, sett):
