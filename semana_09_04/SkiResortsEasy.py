@@ -16,5 +16,7 @@ def minCost(altitude):
             if altitude[i] > altitudes_rehechas[i - 1]:
                 cost += altitude[i] - altitudes_rehechas[i - 1]
                 altitudes_rehechas[i] = altitudes_rehechas[i - 1]
-    return 
+            else:
+                altitudes_rehechas[i] = altitude[i]
+    return cost
         
